@@ -10,6 +10,7 @@ class Shoe
     if BRANDS.size > 3
     BRANDS.pop
     end
+  end
 
   def cobble
     self.condition = "new"
