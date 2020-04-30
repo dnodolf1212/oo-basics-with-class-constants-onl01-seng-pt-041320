@@ -7,9 +7,9 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand 
-    BRANDS.size.pop
-     
-  end
+    if BRANDS.size > 3
+    BRANDS.pop
+    end
 
   def cobble
     self.condition = "new"
